@@ -1,0 +1,42 @@
+#!/bin/sh
+#SBATCH --partition=cmb
+#SBATCH --mem=20G
+#SBATCH --cpus-per-task=8
+#SBATCH --time=200:00:00
+#SBATCH --error=/home/rcf-40/bos/panfs/project/2.eQTL/log/Slurm/rsem_1734.e
+#SBATCH --output=/home/rcf-40/bos/panfs/project/2.eQTL/log/Slurm/rsem_1734.o 
+#SBATCH --job-name=rsem_1734
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476603/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476603/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476487/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476487/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476492/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476492/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476818/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476818/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1477148/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1477148/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1477220/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1477220/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474848/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474848/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474726/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474726/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476165/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476165/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476479/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476479/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476787/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476787/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476420/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476420/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474583/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474583/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476746/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476746/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474721/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474721/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475615/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475615/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475010/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475010/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474828/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474828/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476699/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476699/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476862/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476862/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475016/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475016/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475651/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475651/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476893/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476893/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475677/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475677/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475245/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475245/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474597/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474597/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476100/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476100/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474332/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1474332/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476124/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476124/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475767/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475767/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476225/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476225/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476626/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1476626/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475683/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475683/rsem
+rsem-calculate-expression --bam -p 8 /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475441/Aligned.toTranscriptome.out.bam /home/rcf-40/bos/cmb00/ref/M17PrimaryRSEM /home/rcf-40/bos/staging/3.scRNA-seq/sam/GSM1475441/rsem
